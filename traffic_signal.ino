@@ -12,7 +12,7 @@ Adafruit_NeoPixel ring1( LED_COUNT, RING1_PIN, NEO_GRB + NEO_KHZ800 );
 Adafruit_NeoPixel ring2( LED_COUNT, RING2_PIN, NEO_GRB + NEO_KHZ800 );
 
 Adafruit_NeoPixel* rings[] = { &ring0, &ring1, &ring2 };
-uint32_t colors[] = { ring0.Color( 255, 0, 0 ), ring1.Color( 255, 191, 0 ), ring2.Color( 0, 255, 0 ) };
+uint32_t colors[] = { ring0.Color( 255, 0, 0 ), ring2.Color( 0, 255, 0 ), ring1.Color( 255, 191, 0 ) };
 
 enum colors {
     COLOR_RED = 0,
